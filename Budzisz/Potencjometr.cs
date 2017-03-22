@@ -6,7 +6,6 @@ namespace Budzisz
 {
     public partial class Potencjometr : UserControl
     {
-
         private double _Value=13;
         [System.ComponentModel.CategoryAttribute("Value")]
         public double Value
