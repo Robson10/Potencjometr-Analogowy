@@ -22,5 +22,12 @@ namespace Budzisz
         {
             MessageBox.Show("kliknieto mnie");
         }
+        protected override void OnPaint(PaintEventArgs e)
+        {
+            base.OnPaint(e);
+            progressBar1.Value = (int)potencjometr2.Value;
+        }
+
+
     }
 }

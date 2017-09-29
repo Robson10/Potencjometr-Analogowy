@@ -28,64 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.potencjometr9 = new Budzisz.Potencjometr();
-            this.potencjometr8 = new Budzisz.Potencjometr();
-            this.potencjometr7 = new Budzisz.Potencjometr();
             this.potencjometr4 = new Budzisz.Potencjometr();
             this.potencjometr5 = new Budzisz.Potencjometr();
             this.potencjometr6 = new Budzisz.Potencjometr();
             this.potencjometr3 = new Budzisz.Potencjometr();
             this.potencjometr2 = new Budzisz.Potencjometr();
             this.potencjometr1 = new Budzisz.Potencjometr();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.SuspendLayout();
-            // 
-            // potencjometr9
-            // 
-            this.potencjometr9.BackColor = System.Drawing.Color.Transparent;
-            this.potencjometr9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.potencjometr9.IsType1 = false;
-            this.potencjometr9.IsType2 = true;
-            this.potencjometr9.IsType3 = false;
-            this.potencjometr9.Location = new System.Drawing.Point(12, 245);
-            this.potencjometr9.Max = 20;
-            this.potencjometr9.Min = 0;
-            this.potencjometr9.Name = "potencjometr9";
-            this.potencjometr9.PotentiometerColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(250)))));
-            this.potencjometr9.Size = new System.Drawing.Size(65, 73);
-            this.potencjometr9.TabIndex = 8;
-            this.potencjometr9.Value = 0D;
-            // 
-            // potencjometr8
-            // 
-            this.potencjometr8.BackColor = System.Drawing.Color.Transparent;
-            this.potencjometr8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.potencjometr8.IsType1 = false;
-            this.potencjometr8.IsType2 = true;
-            this.potencjometr8.IsType3 = false;
-            this.potencjometr8.Location = new System.Drawing.Point(12, 168);
-            this.potencjometr8.Max = 20;
-            this.potencjometr8.Min = 0;
-            this.potencjometr8.Name = "potencjometr8";
-            this.potencjometr8.PotentiometerColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(250)))));
-            this.potencjometr8.Size = new System.Drawing.Size(65, 71);
-            this.potencjometr8.TabIndex = 7;
-            this.potencjometr8.Value = 3D;
-            // 
-            // potencjometr7
-            // 
-            this.potencjometr7.BackColor = System.Drawing.Color.Transparent;
-            this.potencjometr7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.potencjometr7.IsType1 = false;
-            this.potencjometr7.IsType2 = true;
-            this.potencjometr7.IsType3 = false;
-            this.potencjometr7.Location = new System.Drawing.Point(12, 12);
-            this.potencjometr7.Max = 20;
-            this.potencjometr7.Min = 0;
-            this.potencjometr7.Name = "potencjometr7";
-            this.potencjometr7.PotentiometerColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(250)))));
-            this.potencjometr7.Size = new System.Drawing.Size(65, 150);
-            this.potencjometr7.TabIndex = 6;
-            this.potencjometr7.Value = 10D;
             // 
             // potencjometr4
             // 
@@ -159,7 +109,7 @@
             this.potencjometr2.IsType2 = false;
             this.potencjometr2.IsType3 = true;
             this.potencjometr2.Location = new System.Drawing.Point(395, 12);
-            this.potencjometr2.Max = 20;
+            this.potencjometr2.Max = 100;
             this.potencjometr2.Min = 0;
             this.potencjometr2.Name = "potencjometr2";
             this.potencjometr2.PotentiometerColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(250)))), ((int)(((byte)(50)))), ((int)(((byte)(250)))));
@@ -183,14 +133,19 @@
             this.potencjometr1.TabIndex = 0;
             this.potencjometr1.Value = 12D;
             // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(246, 394);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(244, 23);
+            this.progressBar1.TabIndex = 6;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(557, 331);
-            this.Controls.Add(this.potencjometr9);
-            this.Controls.Add(this.potencjometr8);
-            this.Controls.Add(this.potencjometr7);
+            this.ClientSize = new System.Drawing.Size(705, 458);
+            this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.potencjometr4);
             this.Controls.Add(this.potencjometr5);
             this.Controls.Add(this.potencjometr6);
@@ -207,13 +162,11 @@
 
         private Potencjometr potencjometr1;
         private Potencjometr potencjometr2;
-        private Potencjometr potencjometr3;
         private Potencjometr potencjometr4;
         private Potencjometr potencjometr5;
         private Potencjometr potencjometr6;
-        private Potencjometr potencjometr7;
-        private Potencjometr potencjometr8;
-        private Potencjometr potencjometr9;
+        private Potencjometr potencjometr3;
+        private System.Windows.Forms.ProgressBar progressBar1;
     }
 }
 

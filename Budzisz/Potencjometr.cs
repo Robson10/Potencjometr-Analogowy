@@ -217,7 +217,7 @@ namespace Budzisz
             else if (IsType2)
             {
                 e.Graphics.DrawImage(
-                    RotateImage(Budzisz.Properties.Resources.Type2Front, convertToFloat(_angle - 90)),
+                    RotateImage(Budzisz.Properties.Resources.type2Front, convertToFloat(_angle - 90)),
                     ClientRectangle);
                 e.Graphics.DrawImage(Budzisz.Properties.Resources.type2BG, ClientRectangle);
                 e.Graphics.FillEllipse(new SolidBrush(PotentiometerColor), ClientRectangle);
